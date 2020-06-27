@@ -23,7 +23,7 @@ public class RecipeService {
 
     public List<Recipe> searchRecipe(List<Ingredient> ingredients) {
 
-        List<Recipe> recipes = recipeRepository.findAllByIngredientsContains(ingredients);
+        List<Recipe> recipes = recipeRepository.findAllByIngredientsContaining(ingredients);
         return recipes;
     }
 }
