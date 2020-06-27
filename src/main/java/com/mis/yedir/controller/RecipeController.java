@@ -1,0 +1,4 @@
+package com.mis.yedir.controller;
+
+public class RecipeController {
+}
