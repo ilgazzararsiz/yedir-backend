@@ -18,4 +18,8 @@ public class IngredientService {
     public void create(Ingredient ingredient) {
         ingredientRepository.save(ingredient);
     }
+
+    public List<Ingredient> getAllByCategoryId(String categoryId) {
+        return ingredientRepository.findAllByCategory_Id(categoryId);
+    }
 }
