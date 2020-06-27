@@ -1,4 +1,7 @@
 package com.mis.yedir.repository;
 
-public class CategoryRepository {
+import com.mis.yedir.model.Category;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface CategoryRepository extends MongoRepository<Category, String> {
 }

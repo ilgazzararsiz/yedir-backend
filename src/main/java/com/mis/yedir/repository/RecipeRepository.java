@@ -1,4 +1,12 @@
 package com.mis.yedir.repository;
 
-public interface RecipeRepository {
+import com.mis.yedir.model.Ingredient;
+import com.mis.yedir.model.Recipe;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import java.util.List;
+
+public interface RecipeRepository extends MongoRepository<Recipe, String> {
+
+    public List<Recipe> findAllByIngredientsContains(List<Ingredient> ingredients);
 }

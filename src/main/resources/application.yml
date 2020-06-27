@@ -1,0 +1,7 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:qweasd123@cluster0-yrrgf.mongodb.net/yedir?retryWrites=true&w=majority
+server:
+  port:
+    8081
